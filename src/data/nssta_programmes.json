@@ -1,0 +1,58 @@
+[
+  {
+    "id": "NSSTA-001",
+    "title": "Foundation Course in Official Statistics",
+    "relatedCompetencies": ["COMP-001", "COMP-002", "COMP-009"],
+    "mode": "in-person",
+    "durationDays": 10,
+    "eligibility": "New entrants to the statistical service"
+  },
+  {
+    "id": "NSSTA-002",
+    "title": "Advanced Sampling Techniques Workshop",
+    "relatedCompetencies": ["COMP-002", "COMP-001"],
+    "mode": "in-person",
+    "durationDays": 5,
+    "eligibility": "Statistical Officers with 1+ years experience"
+  },
+  {
+    "id": "NSSTA-003",
+    "title": "Data Analytics and Visualization for Policy",
+    "relatedCompetencies": ["COMP-010", "COMP-012", "COMP-017"],
+    "mode": "hybrid",
+    "durationDays": 7,
+    "eligibility": "Data Analysts and Statistical Officers"
+  },
+  {
+    "id": "NSSTA-004",
+    "title": "GIS Applications in Field Surveys",
+    "relatedCompetencies": ["COMP-016"],
+    "mode": "in-person",
+    "durationDays": 4,
+    "eligibility": "Field Investigators"
+  },
+  {
+    "id": "NSSTA-005",
+    "title": "AI/ML in Official Statistics Orientation",
+    "relatedCompetencies": ["COMP-018", "COMP-010"],
+    "mode": "online",
+    "durationDays": 3,
+    "eligibility": "Open to all technical staff"
+  },
+  {
+    "id": "NSSTA-006",
+    "title": "Data Privacy and Digital Governance for Statisticians",
+    "relatedCompetencies": ["COMP-023", "COMP-022", "COMP-026"],
+    "mode": "online",
+    "durationDays": 2,
+    "eligibility": "Open to all staff"
+  },
+  {
+    "id": "NSSTA-007",
+    "title": "National Accounts Statistics Refresher",
+    "relatedCompetencies": ["COMP-003", "COMP-004"],
+    "mode": "in-person",
+    "durationDays": 5,
+    "eligibility": "Statistical Officers"
+  }
+]

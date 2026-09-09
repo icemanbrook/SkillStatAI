@@ -1,0 +1,29 @@
+[
+  {
+    "id": "EMP-001",
+    "name": "Ananya Rao",
+    "employeeId": "STAT-2026-00421",
+    "department": "Labour Statistics",
+    "jobRoleId": "ROLE-001",
+    "email": "ananya.rao@example.gov.in",
+    "isDemoLoggedInUser": true
+  },
+  {
+    "id": "EMP-002",
+    "name": "Rahul Menon",
+    "employeeId": "STAT-2026-00518",
+    "department": "Data Analytics Cell",
+    "jobRoleId": "ROLE-002",
+    "email": "rahul.menon@example.gov.in",
+    "isDemoLoggedInUser": false
+  },
+  {
+    "id": "EMP-003",
+    "name": "Priya Nair",
+    "employeeId": "STAT-2026-00602",
+    "department": "Agricultural Statistics",
+    "jobRoleId": "ROLE-003",
+    "email": "priya.nair@example.gov.in",
+    "isDemoLoggedInUser": false
+  }
+]

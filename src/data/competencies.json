@@ -1,0 +1,37 @@
+[
+  { "id": "COMP-001", "name": "Survey Design", "category": "Statistical" },
+  { "id": "COMP-002", "name": "Sampling", "category": "Statistical" },
+  { "id": "COMP-003", "name": "National Accounts", "category": "Statistical" },
+  { "id": "COMP-004", "name": "Price Statistics", "category": "Statistical" },
+  { "id": "COMP-005", "name": "Labour Statistics", "category": "Statistical" },
+  { "id": "COMP-006", "name": "Agricultural Statistics", "category": "Statistical" },
+  { "id": "COMP-007", "name": "SDG Indicators", "category": "Statistical" },
+  { "id": "COMP-008", "name": "Metadata Standards", "category": "Statistical" },
+  { "id": "COMP-009", "name": "Data Quality", "category": "Statistical" },
+
+  { "id": "COMP-010", "name": "Python", "category": "Technical" },
+  { "id": "COMP-011", "name": "R", "category": "Technical" },
+  { "id": "COMP-012", "name": "SQL", "category": "Technical" },
+  { "id": "COMP-013", "name": "Stata", "category": "Technical" },
+  { "id": "COMP-014", "name": "SPSS", "category": "Technical" },
+  { "id": "COMP-015", "name": "SAS", "category": "Technical" },
+  { "id": "COMP-016", "name": "GIS", "category": "Technical" },
+  { "id": "COMP-017", "name": "Data Visualization", "category": "Technical" },
+  { "id": "COMP-018", "name": "AI/ML", "category": "Technical" },
+  { "id": "COMP-019", "name": "Cloud", "category": "Technical" },
+  { "id": "COMP-020", "name": "APIs", "category": "Technical" },
+  { "id": "COMP-021", "name": "Open Data", "category": "Technical" },
+
+  { "id": "COMP-022", "name": "Cybersecurity", "category": "Digital Governance" },
+  { "id": "COMP-023", "name": "Data Privacy", "category": "Digital Governance" },
+  { "id": "COMP-024", "name": "Digital Signatures", "category": "Digital Governance" },
+  { "id": "COMP-025", "name": "Government Cloud", "category": "Digital Governance" },
+  { "id": "COMP-026", "name": "DPI", "category": "Digital Governance" },
+
+  { "id": "COMP-027", "name": "Leadership", "category": "Behavioural/Managerial" },
+  { "id": "COMP-028", "name": "Communication", "category": "Behavioural/Managerial" },
+  { "id": "COMP-029", "name": "Project Management", "category": "Behavioural/Managerial" },
+  { "id": "COMP-030", "name": "Ethics", "category": "Behavioural/Managerial" },
+  { "id": "COMP-031", "name": "Decision Making", "category": "Behavioural/Managerial" },
+  { "id": "COMP-032", "name": "Change Management", "category": "Behavioural/Managerial" }
+]

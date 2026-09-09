@@ -1,0 +1,308 @@
+[
+  {
+    "id": "Q-001",
+    "question": "Which sampling method divides a population into groups and randomly selects entire groups?",
+    "options": ["Simple random sampling", "Cluster sampling", "Systematic sampling", "Convenience sampling"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-002",
+    "explanation": "Cluster sampling divides the population into clusters (often geographic) and randomly selects whole clusters to survey."
+  },
+  {
+    "id": "Q-002",
+    "question": "In stratified sampling, the population is first divided into:",
+    "options": ["Random clusters", "Homogeneous subgroups (strata)", "Sequential intervals", "Convenience groups"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-002",
+    "explanation": "Stratified sampling splits the population into homogeneous strata, then samples independently within each."
+  },
+  {
+    "id": "Q-003",
+    "question": "What does 'sampling frame' refer to?",
+    "options": ["The margin of error", "The list or source from which the sample is drawn", "The final sample size", "The survey questionnaire"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-002",
+    "explanation": "The sampling frame is the actual list or source material from which a sample is drawn."
+  },
+  {
+    "id": "Q-004",
+    "question": "Systematic sampling selects units by:",
+    "options": ["Picking every kth unit after a random start", "Selecting only volunteers", "Randomly selecting entire clusters", "Weighting by population size"],
+    "correctOption": 0,
+    "difficulty": "medium",
+    "competencyId": "COMP-002",
+    "explanation": "Systematic sampling picks a random starting point, then selects every kth element thereafter."
+  },
+  {
+    "id": "Q-005",
+    "question": "What is the main purpose of pilot testing a survey questionnaire?",
+    "options": ["To finalize the sample size", "To identify and fix design or wording problems before full rollout", "To calculate the response rate", "To train field investigators only"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-001",
+    "explanation": "A pilot test uncovers ambiguous wording, flow issues, and logistical problems before the survey is deployed at scale."
+  },
+  {
+    "id": "Q-006",
+    "question": "A leading question in survey design is problematic because it:",
+    "options": ["Takes too long to answer", "Nudges the respondent toward a particular answer", "Is too short", "Cannot be coded"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-001",
+    "explanation": "Leading questions bias responses by suggesting what the 'correct' or expected answer should be."
+  },
+  {
+    "id": "Q-007",
+    "question": "Which is an example of a closed-ended survey question?",
+    "options": ["'Describe your experience at work.'", "'Rate your satisfaction from 1 to 5.'", "'What would you improve?'", "'Tell us more about your role.'"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-001",
+    "explanation": "Closed-ended questions offer a fixed set of response options, such as a rating scale."
+  },
+  {
+    "id": "Q-008",
+    "question": "Which Python library is most commonly used for tabular data manipulation?",
+    "options": ["NumPy", "Pandas", "Matplotlib", "Flask"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-010",
+    "explanation": "Pandas provides DataFrame structures purpose-built for tabular data manipulation and analysis."
+  },
+  {
+    "id": "Q-009",
+    "question": "In Python, which data structure is immutable?",
+    "options": ["List", "Dictionary", "Tuple", "Set"],
+    "correctOption": 2,
+    "difficulty": "medium",
+    "competencyId": "COMP-010",
+    "explanation": "Tuples cannot be modified after creation, unlike lists, dictionaries, and sets."
+  },
+  {
+    "id": "Q-010",
+    "question": "What does the following do: `df.groupby('region')['sales'].mean()`?",
+    "options": ["Sorts sales by region", "Computes average sales per region", "Deletes the region column", "Filters rows where sales is the mean"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-010",
+    "explanation": "groupby('region') partitions rows by region, and .mean() computes the average sales within each partition."
+  },
+  {
+    "id": "Q-011",
+    "question": "Which keyword is used to handle exceptions in Python?",
+    "options": ["catch", "except", "rescue", "error"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-010",
+    "explanation": "Python uses try/except blocks to catch and handle exceptions."
+  },
+  {
+    "id": "Q-012",
+    "question": "Which SQL clause is used to filter rows before aggregation?",
+    "options": ["HAVING", "WHERE", "GROUP BY", "ORDER BY"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-012",
+    "explanation": "WHERE filters individual rows before any GROUP BY aggregation occurs; HAVING filters after aggregation."
+  },
+  {
+    "id": "Q-013",
+    "question": "Which SQL JOIN returns only matching rows from both tables?",
+    "options": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL OUTER JOIN"],
+    "correctOption": 2,
+    "difficulty": "easy",
+    "competencyId": "COMP-012",
+    "explanation": "INNER JOIN returns only the rows that have matching values in both joined tables."
+  },
+  {
+    "id": "Q-014",
+    "question": "What does the SQL `GROUP BY` clause do?",
+    "options": ["Sorts result rows", "Groups rows sharing a value so aggregate functions can be applied per group", "Removes duplicate rows", "Renames columns"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-012",
+    "explanation": "GROUP BY groups rows that share a column value, enabling aggregate functions like COUNT or AVG per group."
+  },
+  {
+    "id": "Q-015",
+    "question": "Which SQL statement is used to add a new column to an existing table?",
+    "options": ["ALTER TABLE ... ADD COLUMN", "UPDATE TABLE ... ADD", "INSERT COLUMN", "CREATE COLUMN"],
+    "correctOption": 0,
+    "difficulty": "medium",
+    "competencyId": "COMP-012",
+    "explanation": "ALTER TABLE ... ADD COLUMN modifies an existing table's schema to add a new column."
+  },
+  {
+    "id": "Q-016",
+    "question": "Which chart type is best suited for showing a trend over time?",
+    "options": ["Pie chart", "Line chart", "Scatter plot", "Box plot"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-017",
+    "explanation": "Line charts are well suited to showing how a value changes continuously across a time axis."
+  },
+  {
+    "id": "Q-017",
+    "question": "A box plot is primarily used to show:",
+    "options": ["Correlation between two variables", "The distribution and spread of data, including outliers", "Proportions of a whole", "Geographic distribution"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-017",
+    "explanation": "Box plots summarize a distribution's median, quartiles, range, and outliers."
+  },
+  {
+    "id": "Q-018",
+    "question": "Using a 3D pie chart to compare a large number of categories is generally considered:",
+    "options": ["Best practice for precision", "Poor practice, as it distorts proportions and is hard to read", "Required for statistical accuracy", "Only usable for time-series data"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-017",
+    "explanation": "3D effects distort visual proportions and make accurate comparison difficult, especially with many categories."
+  },
+  {
+    "id": "Q-019",
+    "question": "Which of these is a sign of a data quality issue?",
+    "options": ["Consistent formatting across records", "Duplicate records with conflicting values", "A documented metadata schema", "A complete data dictionary"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-009",
+    "explanation": "Duplicate records with conflicting values indicate inconsistency, a core data quality problem."
+  },
+  {
+    "id": "Q-020",
+    "question": "'Completeness' as a data quality dimension refers to:",
+    "options": ["Whether data is free of duplicates", "Whether all required data values are present", "Whether data was collected on time", "Whether data is stored securely"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-009",
+    "explanation": "Completeness measures whether all expected data fields and records are present, without missing values."
+  },
+  {
+    "id": "Q-021",
+    "question": "Which technique helps detect outliers in a numeric dataset?",
+    "options": ["Interquartile range (IQR) method", "Alphabetical sorting", "Renaming columns", "Merging tables"],
+    "correctOption": 0,
+    "difficulty": "medium",
+    "competencyId": "COMP-009",
+    "explanation": "The IQR method flags values far outside the middle 50% of the data as potential outliers."
+  },
+  {
+    "id": "Q-022",
+    "question": "In machine learning, what is 'overfitting'?",
+    "options": ["A model that performs well on both training and unseen data", "A model that learns training data too closely and performs poorly on new data", "A model with too few parameters", "A model trained without any data"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-018",
+    "explanation": "Overfitting occurs when a model captures noise and specifics of training data, hurting generalization to new data."
+  },
+  {
+    "id": "Q-023",
+    "question": "Which of these is a supervised learning task?",
+    "options": ["Clustering customers with no labels", "Predicting house prices from labeled historical data", "Reducing dimensionality of a dataset", "Randomly grouping data points"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-018",
+    "explanation": "Supervised learning uses labeled examples (e.g., known prices) to train a model to predict outcomes."
+  },
+  {
+    "id": "Q-024",
+    "question": "What is the role of a 'training set' versus a 'test set' in ML?",
+    "options": ["Both are used only for final evaluation", "The training set fits the model; the test set evaluates it on unseen data", "The test set is used to fit the model", "There is no meaningful difference"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-018",
+    "explanation": "Models are fit on the training set and evaluated on a held-out test set to estimate real-world performance."
+  },
+  {
+    "id": "Q-025",
+    "question": "In GIS, what does a 'shapefile' typically store?",
+    "options": ["Encrypted passwords", "Geospatial vector data such as points, lines, and polygons", "Only raster satellite images", "Compiled program code"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-016",
+    "explanation": "Shapefiles are a common GIS format for storing vector geometry (points, lines, polygons) with attributes."
+  },
+  {
+    "id": "Q-026",
+    "question": "'Geocoding' refers to the process of:",
+    "options": ["Converting addresses into geographic coordinates", "Compressing map images", "Encrypting location data", "Converting coordinates into currency values"],
+    "correctOption": 0,
+    "difficulty": "easy",
+    "competencyId": "COMP-016",
+    "explanation": "Geocoding converts a text address or place name into latitude/longitude coordinates."
+  },
+  {
+    "id": "Q-027",
+    "question": "A choropleth map is used to display:",
+    "options": ["Individual data points only", "Statistical variation across regions using shading or color", "Real-time satellite imagery", "3D terrain elevation only"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-016",
+    "explanation": "Choropleth maps shade regions according to a statistical value, making regional variation easy to compare."
+  },
+  {
+    "id": "Q-028",
+    "question": "Under data privacy principles, 'data minimization' means:",
+    "options": ["Collecting as much data as possible for future use", "Collecting only the data necessary for a specific stated purpose", "Storing data indefinitely", "Sharing data with all departments by default"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-023",
+    "explanation": "Data minimization limits collection to what is strictly necessary for the stated purpose."
+  },
+  {
+    "id": "Q-029",
+    "question": "Which of these is considered personally identifiable information (PII)?",
+    "options": ["A region's total population count", "An individual's Aadhaar/national ID number", "The average national literacy rate", "A department's annual budget"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-023",
+    "explanation": "A national ID number can directly identify an individual, making it PII."
+  },
+  {
+    "id": "Q-030",
+    "question": "Anonymization of a dataset primarily aims to:",
+    "options": ["Improve visualization speed", "Remove or alter identifying details so individuals cannot be re-identified", "Increase file size for backup", "Add more personal fields for analysis"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-023",
+    "explanation": "Anonymization strips or transforms identifying details to prevent re-identification of individuals."
+  },
+  {
+    "id": "Q-031",
+    "question": "When giving feedback to a colleague on a report, which approach best supports clear communication?",
+    "options": ["Vague general praise with no specifics", "Specific, actionable, and respectful observations", "Only listing what was wrong", "Waiting until a performance review to mention anything"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-028",
+    "explanation": "Effective feedback is specific, actionable, and delivered respectfully so it can actually be acted upon."
+  },
+  {
+    "id": "Q-032",
+    "question": "In a status update to stakeholders, which is the most effective communication practice?",
+    "options": ["Burying key risks deep in a long document", "Leading with the most important information and flagging risks clearly", "Omitting timelines to avoid commitment", "Using only technical jargon"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-028",
+    "explanation": "Leading with key information and clearly flagging risks helps stakeholders act quickly and stay informed."
+  },
+  {
+    "id": "Q-033",
+    "question": "National Accounts statistics primarily measure:",
+    "options": ["Individual household debt only", "The overall economic activity and output of a country (e.g., GDP)", "Weather patterns", "Literacy rates only"],
+    "correctOption": 1,
+    "difficulty": "easy",
+    "competencyId": "COMP-003",
+    "explanation": "National Accounts track aggregate economic activity, including measures like GDP, income, and output."
+  },
+  {
+    "id": "Q-034",
+    "question": "GDP calculated by summing consumption, investment, government spending, and net exports uses which approach?",
+    "options": ["The income approach", "The expenditure approach", "The production approach", "The sampling approach"],
+    "correctOption": 1,
+    "difficulty": "medium",
+    "competencyId": "COMP-003",
+    "explanation": "The expenditure approach sums C + I + G + (X - M) to estimate GDP."
+  }
+]

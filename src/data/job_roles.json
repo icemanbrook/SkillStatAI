@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ROLE-001",
+    "name": "Statistical Officer",
+    "description": "Responsible for survey design, sampling, and data quality assurance for official statistics.",
+    "competencies": [
+      { "competencyId": "COMP-002", "requiredLevel": 4 },
+      { "competencyId": "COMP-001", "requiredLevel": 4 },
+      { "competencyId": "COMP-009", "requiredLevel": 4 },
+      { "competencyId": "COMP-010", "requiredLevel": 3 },
+      { "competencyId": "COMP-012", "requiredLevel": 3 },
+      { "competencyId": "COMP-017", "requiredLevel": 3 },
+      { "competencyId": "COMP-016", "requiredLevel": 2 },
+      { "competencyId": "COMP-018", "requiredLevel": 2 }
+    ]
+  },
+  {
+    "id": "ROLE-002",
+    "name": "Data Analyst",
+    "description": "Analyses and visualizes statistical data, builds dashboards and reports for decision-making.",
+    "competencies": [
+      { "competencyId": "COMP-010", "requiredLevel": 4 },
+      { "competencyId": "COMP-012", "requiredLevel": 4 },
+      { "competencyId": "COMP-017", "requiredLevel": 4 },
+      { "competencyId": "COMP-011", "requiredLevel": 3 },
+      { "competencyId": "COMP-018", "requiredLevel": 3 },
+      { "competencyId": "COMP-009", "requiredLevel": 3 },
+      { "competencyId": "COMP-021", "requiredLevel": 2 }
+    ]
+  },
+  {
+    "id": "ROLE-003",
+    "name": "Field Investigator",
+    "description": "Conducts field surveys and data collection for national statistical programmes.",
+    "competencies": [
+      { "competencyId": "COMP-001", "requiredLevel": 3 },
+      { "competencyId": "COMP-002", "requiredLevel": 3 },
+      { "competencyId": "COMP-006", "requiredLevel": 3 },
+      { "competencyId": "COMP-005", "requiredLevel": 2 },
+      { "competencyId": "COMP-028", "requiredLevel": 3 },
+      { "competencyId": "COMP-023", "requiredLevel": 2 }
+    ]
+  }
+]

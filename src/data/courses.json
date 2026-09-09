@@ -1,0 +1,92 @@
+[
+  {
+    "id": "COURSE-001",
+    "title": "Python for Statistical Analysis",
+    "competencyId": "COMP-010",
+    "targetLevel": 3,
+    "durationHours": 8,
+    "format": "self-paced",
+    "description": "Covers Python fundamentals, Pandas, and basic statistical analysis for official statistics work."
+  },
+  {
+    "id": "COURSE-002",
+    "title": "Introduction to Sampling Techniques",
+    "competencyId": "COMP-002",
+    "targetLevel": 4,
+    "durationHours": 6,
+    "format": "self-paced",
+    "description": "Covers simple random, stratified, cluster, and systematic sampling with applied examples."
+  },
+  {
+    "id": "COURSE-003",
+    "title": "SQL for Data Professionals",
+    "competencyId": "COMP-012",
+    "targetLevel": 3,
+    "durationHours": 5,
+    "format": "self-paced",
+    "description": "Hands-on SQL querying, joins, aggregation, and schema basics."
+  },
+  {
+    "id": "COURSE-004",
+    "title": "Data Visualization Best Practices",
+    "competencyId": "COMP-017",
+    "targetLevel": 3,
+    "durationHours": 4,
+    "format": "self-paced",
+    "description": "Choosing the right chart, avoiding misleading visuals, and dashboard design principles."
+  },
+  {
+    "id": "COURSE-005",
+    "title": "Foundations of Data Quality Management",
+    "competencyId": "COMP-009",
+    "targetLevel": 4,
+    "durationHours": 5,
+    "format": "self-paced",
+    "description": "Covers completeness, consistency, accuracy, and outlier detection for statistical data."
+  },
+  {
+    "id": "COURSE-006",
+    "title": "AI/ML Fundamentals for Statisticians",
+    "competencyId": "COMP-018",
+    "targetLevel": 2,
+    "durationHours": 6,
+    "format": "self-paced",
+    "description": "An applied introduction to supervised/unsupervised learning concepts for official statistics use cases."
+  },
+  {
+    "id": "COURSE-007",
+    "title": "GIS Essentials for Field Data",
+    "competencyId": "COMP-016",
+    "targetLevel": 2,
+    "durationHours": 5,
+    "format": "self-paced",
+    "description": "Covers shapefiles, geocoding, and choropleth mapping for field survey data."
+  },
+  {
+    "id": "COURSE-008",
+    "title": "Data Privacy and Protection Essentials",
+    "competencyId": "COMP-023",
+    "targetLevel": 2,
+    "durationHours": 3,
+    "format": "self-paced",
+    "description": "Covers data minimization, PII handling, and anonymization for government data."
+  },
+  {
+    "id": "COURSE-009",
+    "title": "Effective Workplace Communication",
+    "competencyId": "COMP-028",
+    "targetLevel": 3,
+    "durationHours": 3,
+    "format": "self-paced",
+    "description": "Covers giving feedback, stakeholder updates, and clear written communication."
+  },
+  {
+    "id": "COURSE-010",
+    "title": "Understanding National Accounts",
+    "competencyId": "COMP-003",
+    "targetLevel": 3,
+    "durationHours": 4,
+    "format": "self-paced",
+    "description": "Covers GDP measurement approaches and national accounting frameworks."
+  }
+]
