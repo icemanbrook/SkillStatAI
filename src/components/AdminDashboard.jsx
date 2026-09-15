@@ -1,3 +1,5 @@
+import SpotlightCallout from './SpotlightCallout';
+import SkylineHero from './SkylineHero';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Users, UserCog, Building2, TrendingUp, TrendingDown, GitCompare } from 'lucide-react';
@@ -42,6 +44,7 @@ function TrendBadge({ diff }) {
 function AdminDashboard() {
   const stats = getOrgStats();
   const orgAvg = getOrgAvgGap();
+  const naturalOrderDepartments = getDepartments(); // unsorted, for the skyline visual
   const departments = [...getDepartments()].sort((a, b) => b.avgSkillGap - a.avgSkillGap);
 
   return (
@@ -49,11 +52,15 @@ function AdminDashboard() {
       <h1 className="text-3xl font-extrabold text-[#14140F] mb-1">Organisation overview.</h1>
       <p className="text-sm text-[#5B5850] mb-6">Organisation-wide competency snapshot</p>
 
+      <SkylineHero departments={naturalOrderDepartments} />
+
       <div className="flex gap-3 mb-12">
         <StatCard icon={Users} label="Total employees" value={stats.totalEmployees} />
         <StatCard icon={UserCog} label="Total managers" value={stats.totalManagers} />
         <StatCard icon={Building2} label="Total departments" value={stats.totalDepartments} />
       </div>
+
+      <SpotlightCallout departments={departments} orgAvg={orgAvg} />
 
       <div className="flex items-center justify-between mb-1">
         <h2 className="text-xl font-bold text-[#14140F]">Shop by department</h2>
