@@ -1,5 +1,9 @@
+import { useState, useEffect } from 'react';
 import SpotlightCallout from './SpotlightCallout';
 import SkylineHero from './SkylineHero';
+import QueryBox from './QueryBox';
+import LastUpdated from './LastUpdated';
+import DashboardSkeleton from './DashboardSkeleton';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Users, UserCog, Building2, TrendingUp, TrendingDown, GitCompare } from 'lucide-react';
@@ -47,10 +51,24 @@ function AdminDashboard() {
   const naturalOrderDepartments = getDepartments(); // unsorted, for the skyline visual
   const departments = [...getDepartments()].sort((a, b) => b.avgSkillGap - a.avgSkillGap);
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 400);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <DashboardSkeleton />;
+
   return (
     <div className="px-8 py-10 max-w-3xl mx-auto">
       <h1 className="text-3xl font-extrabold text-[#14140F] mb-1">Organisation overview.</h1>
-      <p className="text-sm text-[#5B5850] mb-6">Organisation-wide competency snapshot</p>
+      <div className="flex items-center justify-between mb-6">
+        <p className="text-sm text-[#5B5850]">Organisation-wide competency snapshot</p>
+        <LastUpdated />
+      </div>
+
+      <QueryBox />
 
       <SkylineHero departments={naturalOrderDepartments} />
 
