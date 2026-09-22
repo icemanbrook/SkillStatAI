@@ -11,7 +11,7 @@ This module is the organisation's oversight layer: it shows managers their own t
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 Full write-ups live in the [`documentation/`](./documentation) folder:
 
@@ -23,7 +23,7 @@ Full write-ups live in the [`documentation/`](./documentation) folder:
 
 ---
 
-## 🌟 Features
+##  Features
 
 | Feature | Description |
 |---|---|
@@ -42,7 +42,7 @@ Full write-ups live in the [`documentation/`](./documentation) folder:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -55,7 +55,7 @@ Full write-ups live in the [`documentation/`](./documentation) folder:
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ```bash
 # Install dependencies
@@ -69,7 +69,7 @@ Then open the URL shown in your terminal (usually `http://localhost:5173`).
 
 ---
 
-## 🔐 Demo Login
+##  Demo Login
 
 The Manager side requires login. Use any of these demo credentials:
 
@@ -85,7 +85,7 @@ Admin side requires no login — just visit `/admin`.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 skillstat-app/
@@ -138,7 +138,7 @@ skillstat-app/
 
 ---
 
-## 📄 Key Pages / Routes
+##  Key Pages / Routes
 
 | Route | Description |
 |---|---|
@@ -154,7 +154,7 @@ skillstat-app/
 
 ---
 
-## 🧠 Known Simplifications
+##  Known Simplifications
 
 - Authentication is client-side only (no real backend yet) — intended to connect to the team's backend service
 - All data is mock, structured to match the shape a real API would return
