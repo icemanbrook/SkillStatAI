@@ -11,6 +11,18 @@ This module is the organisation's oversight layer: it shows managers their own t
 
 ---
 
+## 📚 Documentation
+
+Full write-ups live in the [`documentation/`](./documentation) folder:
+
+| Document | Description |
+|---|---|
+| [ARCHITECTURE.md](./documentation/ARCHITECTURE.md) | Data model, derived-data functions, routes, and navigation |
+| [FEATURES.md](./documentation/FEATURES.md) | The "smart" features — insights, severity badges, recommendations, spotlight, skyline, query box |
+| [DEMO_NOTES.md](./documentation/DEMO_NOTES.md) | Known simplifications, demo talking points, and the pitch paragraph |
+
+---
+
 ## 🌟 Features
 
 | Feature | Description |
@@ -75,6 +87,55 @@ Admin side requires no login — just visit `/admin`.
 
 ## 📁 Project Structure
 
+```
+skillstat-app/
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── documentation/                    # Full architecture & feature write-ups
+│   ├── ARCHITECTURE.md
+│   ├── FEATURES.md
+│   └── DEMO_NOTES.md
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+└── src/
+    ├── main.jsx
+    ├── App.jsx                       # All routes, nav bar, page-transition wrapper
+    ├── index.css                     # Tailwind & design tokens
+    │
+    ├── data/                         # Single source of truth
+    │   ├── orgData.js                # Mock records + every derived-data function
+    │   └── insights.js               # Insight sentences, severity flags, recommendations
+    │
+    ├── context/
+    │   └── AuthContext.jsx           # Manager login state (client-side only)
+    │
+    └── components/
+        ├── AdminDashboard.jsx        # /admin — skyline hero, stat cards, spotlight, tiles
+        ├── SkylineHero.jsx           # Mini bar chart summarising all departments
+        ├── SpotlightCallout.jsx      # Auto-highlights the worst-performing department
+        ├── QueryBox.jsx              # Natural-language query → auto-navigates & answers
+        ├── DepartmentDetails.jsx     # /admin/department/:id
+        ├── DepartmentComparison.jsx  # /admin/compare
+        ├── ManagerDetails.jsx        # /admin/manager/:id (admin viewing a manager)
+        ├── ManagerEmployees.jsx      # /admin/manager/:id/employees
+        ├── EmployeeDetails.jsx       # Individual employee page (admin + manager sides)
+        ├── EmployeeList.jsx          # Reusable searchable employee table
+        ├── ManagerDashboard.jsx      # /manager — logged-in manager's own stats
+        ├── MyEmployees.jsx           # /manager/employees
+        ├── Login.jsx                 # /login
+        ├── Breadcrumbs.jsx           # Reusable, context-aware breadcrumb trail
+        ├── InsightBanner.jsx         # Renders the auto-generated insight sentence
+        ├── SeverityBadge.jsx         # Renders the "Critical" flag, pop-in animation
+        ├── RecommendationCard.jsx    # Suggested-training card (with variant selection)
+        ├── SkillGapChart.jsx         # 4-bar skill gap chart used throughout
+        ├── AnimatedNumber.jsx        # Count-up animation for stat cards
+        ├── DashboardSkeleton.jsx     # Loading-state placeholder for dashboard pages
+        └── LastUpdated.jsx           # "Data last synced Xm ago" freshness indicator
+```
+
 ---
 
 ## 📄 Key Pages / Routes
@@ -98,6 +159,8 @@ Admin side requires no login — just visit `/admin`.
 - Authentication is client-side only (no real backend yet) — intended to connect to the team's backend service
 - All data is mock, structured to match the shape a real API would return
 - Recommendations are a rule-based lookup, not a live LLM call — designed to demonstrate the concept
+
+See [DEMO_NOTES.md](./documentation/DEMO_NOTES.md) for the full list and demo talking points.
 
 ---
 
