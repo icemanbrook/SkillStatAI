@@ -1,55 +1,48 @@
-# 🏔️ SkillStat AI — Person 4 Module
+SkillStat AI — Person 4 Module
 
 > **AI-Powered Competency & Skill-Gap Platform**  
 > A low-anxiety, psychological-safety-first digital experience for evaluating employee skills, mapping skill gaps, delivering targeted course quizzes, and generating AI quizzes from learning materials.
 
----
-
-## 🌟 Overview
+Overview
 
 **SkillStat AI** is designed to transform traditional high-stakes employee testing into a supportive, mentor-driven learning journey. Grounded in psychological safety and growth mindset principles, the system eliminates test anxiety while tracking competency progression across official statistical, technical, digital governance, and managerial domains.
 
-### 🔄 The Core Product Loop
+The Core Product Loop
 
-```
+
 EMPLOYEE → BASELINE ASSESSMENT → COMPETENCY SCORE → SKILL GAP → RECOMMENDED COURSE → QUIZ → COMPETENCY UPDATE
-```
 
----
+Key Features (Person 4 Responsibilities)
 
-## ✨ Key Features (Person 4 Responsibilities)
-
-### 1. 📋 Baseline Assessment System
+1.  Baseline Assessment System
 - **Single-Card Focus Mode**: Minimalist view containing only the single question card and essential navigation, removing distraction clutter.
 - **Safe Option Strategy**: Guilt-free answer choice (*"I haven't learned this concept yet / Unsure"*) to discourage forced guessing.
 - **Collapsible Time Estimate**: Toggleable timer estimate (~10 mins total) replacing ticking countdown clocks.
 - **Strength-First Results Framing**: Performance broken down as **"Your Current Superpowers"** and **"Your Next Opportunities for Growth"**.
 
-### 2. 📊 Skill Gap Intelligence & Growth Roadmap
+2.  Skill Gap Intelligence & Growth Roadmap
 - **Formula**: `Required Level − Current Level = Skill Gap`
 - **Gap Classification**: Categorized into `No Gap`, `Low`, `Moderate`, and `High`.
 - **Targeted Recommendations**: Connects identified skill gaps directly to relevant courses (`courses.json`).
 
-### 3. 📚 Post-Learning Quiz Engine
+3. Post-Learning Quiz Engine
 - **Course-Specific Quizzes**: Evaluates knowledge after course completion.
 - **Competency Progression Tracking**: Shows level increases (e.g. `+0.5 / +1.0 Level Progression`) feeding back into the competency system.
 - **Question Explanation Drawers**: Detailed breakdown of answers and explanations upon quiz completion.
 
-### 4. ✨ File → AI Quiz Generator
+4. File → AI Quiz Generator
 - **Multi-Format Support**: Drag-and-drop uploader supporting **PDF**, **PPT/PPTX**, and **DOC/DOCX** (up to 25MB).
 - **Multi-Step Processing Pipeline**: Simulates text extraction, concept analysis, and structured quiz question generation.
 - **Interactive Quiz Runner**: Reuses the core quiz runner engine for seamless active retrieval practice.
 
-### 5. ⛰️ Mountain Trail Visual Progression Mechanic
+5. Mountain Trail Visual Progression Mechanic
 - **Interactive Climbing**: An SVG mountain trail darkens and climbs as questions are answered.
 - **Summit Flag Hoisting (≥70% Score)**: Reaching the mountain peak hoists a red victory flag at the summit alongside the heart pill badge: *"New Skills Higher Horizons!"*.
 - **Basecamp Retreat (<50% Score)**: In low-score evaluations, the trail retreats back toward basecamp with encouraging microcopy (*"Basecamp reached — ready to ascend again!"*).
 
----
+Design Philosophy: Warm Neutral (Clean & Elegant)
 
-## 🎨 Design Philosophy: Warm Neutral (Clean & Elegant)
-
-- **Color Palette**:
+**Color Palette**:
   - Primary Warm Earthy Brown: `#8C7355` / `#94785F`
   - Page Background: Warm Alabaster Cream (`#FAF6F0`)
   - Card & Accent Backgrounds: Warm Sand (`#F5EFE6`)
@@ -59,7 +52,7 @@ EMPLOYEE → BASELINE ASSESSMENT → COMPETENCY SCORE → SKILL GAP → RECOMMEN
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 skillstat-app/
@@ -101,11 +94,6 @@ skillstat-app/
 │       ├── Quiz/                   # Course Quiz Runner & Quiz Results
 │       └── AIQuizUpload/           # File → AI Quiz Workflow Page
 ```
-
----
-
-## 🚀 Getting Started
-
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - `npm` package manager
@@ -151,14 +139,13 @@ dist/assets/index-CZFsqYTc.js   218.65 kB
 
 ---
 
-## ⚖️ Authoritative Scoring Note
+##  Authoritative Scoring Note
 
 As specified in the project contract:
 - The backend remains the authoritative source of truth for competency scores.
 - Frontend percentage scores are demo estimations only; competency level updates are decoupled via `services/` to seamlessly swap mock data for backend REST endpoints (`GET /assessments`, `POST /quizzes/submit`, `POST /ai/generate-quiz`).
 
----
 
-## 📄 License
+##  License
 
 This project is created for the **SkillStat AI** competency development platform.
