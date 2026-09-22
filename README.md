@@ -74,3 +74,33 @@ Admin side requires no login — just visit `/admin`.
 ---
 
 ## 📁 Project Structure
+
+---
+
+## 📄 Key Pages / Routes
+
+| Route | Description |
+|---|---|
+| `/admin` | Organisation overview — skyline chart, query box, spotlight callout, department tiles |
+| `/admin/department/:id` | Department detail — gap breakdown, insight, managers |
+| `/admin/manager/:id` | Manager detail (admin view) |
+| `/admin/manager/:id/employees` | Manager's team list |
+| `/admin/employee/:id` | Individual employee detail — radar chart, recommendation |
+| `/admin/compare` | Compare multiple departments side by side |
+| `/login` | Manager login |
+| `/manager` | Logged-in manager's own dashboard |
+| `/manager/employees` | Logged-in manager's team list |
+
+---
+
+## 🧠 Known Simplifications
+
+- Authentication is client-side only (no real backend yet) — intended to connect to the team's backend service
+- All data is mock, structured to match the shape a real API would return
+- Recommendations are a rule-based lookup, not a live LLM call — designed to demonstrate the concept
+
+---
+
+## 👥 Part of SkillStat AI
+
+This is Person 3's module in a 4-person SIH26101 team build. See the other branches in this repository for the Employee Portal and Assessment modules.
