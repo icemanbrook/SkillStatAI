@@ -18,17 +18,17 @@ function badgeStyle(gap) {
   return { color: '#1B4332', bg: '#E7F0EA' };
 }
 
-function StatCard({ icon: Icon, label, value }) {
+function CompactStatCard({ icon: Icon, label, value }) {
   return (
-    <div className="bg-white border border-[#EDEBE6] rounded-2xl px-5 py-4 flex-1 flex items-center gap-4">
-      <div className="w-10 h-10 rounded-full bg-[#F4F3EF] flex items-center justify-center shrink-0">
-        <Icon size={18} className="text-[#14140F]" />
+    <div className="bg-white border border-[#EDEBE6] rounded-2xl px-4 py-3 flex items-center gap-3">
+      <div className="w-8 h-8 rounded-full bg-[#F4F3EF] flex items-center justify-center shrink-0">
+        <Icon size={15} className="text-[#14140F]" />
       </div>
       <div>
-        <p className="text-2xl font-extrabold text-[#14140F] tabular-nums leading-none">
+        <p className="text-lg font-extrabold text-[#14140F] tabular-nums leading-none">
           <AnimatedNumber value={value} />
         </p>
-        <p className="text-sm text-[#5B5850] mt-1">{label}</p>
+        <p className="text-xs text-[#5B5850] mt-0.5">{label}</p>
       </div>
     </div>
   );
@@ -42,6 +42,16 @@ function TrendBadge({ diff }) {
     <span className="flex items-center gap-1 text-xs font-medium text-white/85">
       <Icon size={12} /> {Math.abs(diff)}% {isWorse ? 'above' : 'below'} average
     </span>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="mt-16 pt-6 border-t border-[#EDEBE6] text-center">
+      <p className="text-xs text-[#A8A59C]">
+        &copy; 2026 &middot; All rights reserved &middot; Suhas Gowda
+      </p>
+    </footer>
   );
 }
 
@@ -70,12 +80,15 @@ function AdminDashboard() {
 
       <QueryBox />
 
-      <SkylineHero departments={naturalOrderDepartments} />
-
-      <div className="flex gap-3 mb-12">
-        <StatCard icon={Users} label="Total employees" value={stats.totalEmployees} />
-        <StatCard icon={UserCog} label="Total managers" value={stats.totalManagers} />
-        <StatCard icon={Building2} label="Total departments" value={stats.totalDepartments} />
+      <div className="flex gap-4 mb-12 items-stretch">
+        <div className="flex-1 min-w-0">
+          <SkylineHero departments={naturalOrderDepartments} />
+        </div>
+        <div className="w-40 shrink-0 flex flex-col gap-3">
+          <CompactStatCard icon={Users} label="Total employees" value={stats.totalEmployees} />
+          <CompactStatCard icon={UserCog} label="Total managers" value={stats.totalManagers} />
+          <CompactStatCard icon={Building2} label="Total departments" value={stats.totalDepartments} />
+        </div>
       </div>
 
       <SpotlightCallout departments={departments} orgAvg={orgAvg} />
@@ -90,7 +103,7 @@ function AdminDashboard() {
         Sorted by highest skill gap &middot; org average is {orgAvg}%
       </p>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 gap-4">
         {departments.map((dept, i) => {
           const diff = dept.avgSkillGap - orgAvg;
           const badge = badgeStyle(dept.avgSkillGap);
@@ -104,7 +117,7 @@ function AdminDashboard() {
             >
               <Link
                 to={`/admin/department/${dept.id}`}
-                className="block rounded-2xl p-5 h-40 relative overflow-hidden group"
+                className="block rounded-2xl p-5 h-28 relative overflow-hidden group"
                 style={{ backgroundColor: TILE_COLORS[i % TILE_COLORS.length] }}
               >
                 <div className="flex items-start justify-between gap-2">
@@ -118,7 +131,7 @@ function AdminDashboard() {
                     {dept.avgSkillGap}%
                   </span>
                 </div>
-                <div className="absolute bottom-4 left-5">
+                <div className="absolute bottom-3 left-5">
                   <TrendBadge diff={diff} />
                 </div>
               </Link>
@@ -126,6 +139,8 @@ function AdminDashboard() {
           );
         })}
       </div>
+
+      <Footer />
     </div>
   );
 }
